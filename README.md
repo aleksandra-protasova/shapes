@@ -1,1 +1,0 @@
-# protasova_av
