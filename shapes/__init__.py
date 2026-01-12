@@ -28,7 +28,6 @@ __all__ = [
     # Вспомогательные функции
     'convert_units',
     'compare_shapes_by_area',
-    'create_shapes_demo',
 
     # Данные
     '__version__',

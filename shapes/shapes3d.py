@@ -1,11 +1,6 @@
 """
 Модуль для представления 3D геометрических фигур.
 """
-
-from math import pi
-from typing import Union
-
-
 class ThreeDShape:
     """
     Базовый класс для всех 3D геометрических фигур.
@@ -150,7 +145,7 @@ class Sphere(ThreeDShape):
 
         :return: Объем сферы
         """
-        return (4 / 3) * pi * self.__radius ** 3
+        return (4 / 3) * 3.14 * self.__radius ** 3
 
     def surface_area(self) -> float:
         """
@@ -160,7 +155,7 @@ class Sphere(ThreeDShape):
 
         :return: Площадь поверхности сферы
         """
-        return 4 * pi * self.__radius ** 2
+        return 4 * 3.14 * self.__radius ** 2
 
     def get_radius(self) -> float:
         """

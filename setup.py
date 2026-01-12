@@ -4,7 +4,7 @@ setup(
     name='geometric_shapes',
     version='0.0.1',
     packages=find_packages("."),
-    scripts=["bin/shapes_app"],
+    scripts=["bin/shapes_app.py"],
     url='https://github.com/aleksandra-protasova/protasova_av',
     license='Apache-2.0',
     author='Протасова Александра Владимировна',
