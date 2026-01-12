@@ -1,7 +1,12 @@
 """
 Модуль для представления 2D геометрических фигур.
 """
-class Shape:
+
+from abc import ABC, abstractmethod
+from math import pi
+from typing import Union
+
+class Shape(ABC):
     """
     Абстрактный базовый класс для всех геометрических фигур.
     """
@@ -17,6 +22,7 @@ class Shape:
 
         self.__unit = unit
 
+    @abstractmethod
     def area(self) -> float:
         """
         Вычисляет площадь фигуры.
@@ -25,6 +31,7 @@ class Shape:
         """
         pass
 
+    @abstractmethod
     def perimeter(self) -> float:
         """
         Вычисляет периметр фигуры.
@@ -217,7 +224,7 @@ class Circle(Shape):
 
         :return: Площадь круга
         """
-        return 3.14 * self.__radius ** 2
+        return pi * self.__radius ** 2
 
     def perimeter(self) -> float:
         """
@@ -227,7 +234,7 @@ class Circle(Shape):
 
         :return: Длина окружности
         """
-        return 2 * 3.14 * self.__radius
+        return 2 * pi * self.__radius
 
     def get_radius(self) -> float:
         """
