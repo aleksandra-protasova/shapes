@@ -2,15 +2,9 @@
 Главный исполняемый файл приложения
 """
 
-try:
-    from shapes.shapes2d import Rectangle, Circle
-    from shapes.shapes3d import Cube, Sphere
-    from shapes.utils import convert_units, compare_shapes_by_area
-except ImportError:
-    from shapes.shapes2d import Rectangle, Circle
-    from shapes.shapes3d import Cube, Sphere
-    from shapes.utils import convert_units, compare_shapes_by_area
-
+from shapes.shapes2d import Rectangle, Circle
+from shapes.shapes3d import Cube, Sphere
+from shapes.utils import convert_units, compare_shapes_by_area
 
 def print_table(data, headers):
     col_widths = []
@@ -125,4 +119,5 @@ def main():
     print("Программа завершена")
 
 if __name__ == "__main__":
+
     main()
